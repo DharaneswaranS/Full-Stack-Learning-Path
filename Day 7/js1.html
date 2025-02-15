@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script</title>
+</head>
+<body>
+    <h2 id="mahehs">hELLO</h2>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <input type="text" placeholder="name" id="name" onkeyup="console.log(this.value);">
+    <input type="text" placeholder="name" id="name2" onkeydown="console.log(this.value);">
+    <button id="muhg" type="reset" onclick="clicak()" >Click me</button>
+    <script>
+        var a=10
+        b=10
+        c=a+b
+        d=String(c)
+        console.log(c)
+        console.log(`hello ${c} karadi`)
+        var heading=document.getElementById("mahehs");
+        console.log(heading.innerText);
+        console.log(mahehs.innerText)
+        console.log(mahehs.innerHTML);
+        var box=document.getElementsByClassName('box');
+        console.log(box.length);
+        console.log(box[0]);
+        for(i=0;i<box.length;i++){
+            console.log(i);
+        }
+        var name=document.getElementById("name2");
+        console.log(name2.value);
+        function clicak(){
+            var name=document.getElementById("name");
+            console.log(name.value);
+            console.log("clicked");
+        }
+    </script>
+</body>
+</html>

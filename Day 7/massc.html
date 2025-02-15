@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <input type="number" id="n1">
+    <input type="number" id="n2">
+    <button onclick=""
+    <button onclick="add()">Add</button>
+    <button onclick="sub()">SUB</button>
+    <button onclick="mul()">MUL</button>
+    <button onclick="div()">DIV</button>
+    <button onclick="floor()">FLOOR</button>
+    <button type="reset" >CLR</button>
+    <div id="output"></div>
+    <script>
+        function add(){
+            var a = document.getElementById("n1");
+            var b = document.getElementById("n2");
+            e = Number(a.value)
+            f = Number(b.value)
+            var c = e + f;
+            var oe=document.getElementById("output");
+            oe.append(c)
+            console.log(c)
+        }
+        function sub(){
+            var a = document.getElementById("n1");
+            var b = document.getElementById("n2");
+            e = Number(a.value)
+            f = Number(b.value)
+            var c = e - f;
+            var oe=document.getElementById("output");
+            oe.append(c)
+            console.log(c)
+        }
+        function mul(){
+            var a = document.getElementById("n1");
+            var b = document.getElementById("n2");
+            e = Number(a.value)
+            f = Number(b.value)
+            var c = e * f;
+            var oe=document.getElementById("output");
+            oe.append(c)
+            console.log(c)
+        }
+        function div(){
+            var a = document.getElementById("n1");
+            var b = document.getElementById("n2");
+            e = Number(a.value)
+            f = Number(b.value)
+            var c = e / f;
+            var oe=document.getElementById("output");
+            oe.append(c)
+            console.log(c)
+        }
+        function floor(){
+            var a = document.getElementById("n1");
+            var b = document.getElementById("n2");
+            e = Number(a.value)
+            f = Number(b.value)
+            var c =Math.floor(e,f);
+            var oe=document.getElementById("output");
+            oe.append(c)
+            console.log(c)
+        }
+    </script>
+</body>
+</html>

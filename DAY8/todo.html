@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .holder h3{
+        text-decoration: none;
+    }
+</style>
+<body>
+    <input type="text" id="intp" style="margin-top:18%; margin-left:38%;">
+    <button onclick="add()">Add</button>
+    <table id="holder" border=2; style="border-collapse:collapse; margin-top:0%; margin-left:40%; text-align:center;">
+        <tr id="mg">
+            <th>
+                Work
+            </th>
+            <th>
+                Done or not
+            </th>
+            <th>Status</th>
+        </tr>
+        
+    </table>
+</body>
+<script>
+    function add(){
+        var intp=document.getElementById("intp").value
+        var holder=document.getElementById("holder")
+        var div=document.createElement("tr")
+        div.setAttribute("id","box")
+        div.innerHTML=`<td><h3 id="${intp}" class="detail">${intp}</h3></</td><td><input onclick="change11()" value="${intp}" class="inn" type="checkbox"></td><td id="A${intp}">Not complete</td>`
+        holder.append(div)
+    
+    }
+    function change11(){
+        var va=document.querySelectorAll(".inn")
+        for(i=0;i<va.length;i++){
+            if(va[i].checked){
+                var kk=document.getElementById(va[i].value)
+                kk.style.textDecoration="line-through"
+                var ad=document.getElementById("A"+va[i].value)
+                ad.innerHTML=`Completed`
+            }
+            else{
+                 var kk=document.getElementById(va[i].value)
+                kk.style.textDecoration="none"
+                var ad=document.getElementById("A"+va[i].value)
+                ad.innerHTML=`Not Completed`
+            }
+        }
+    }
+
+        
+        
+</script>
+</html>

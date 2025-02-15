@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #top1{
+            display:none;
+            background-color: aqua;
+            height:150px;
+            width:150px;
+            margin-top: 20%;
+            margin-left:43%
+
+        }
+        #top1 button{
+            background-color: aqua;
+            border:none;
+            position:relative;
+            left:80%;
+        }
+        #ko{
+            background-color: red;
+            height:20px;
+            width:20px;
+        }
+    </style>
+</head>
+<body> 
+    <div id="top1">
+        <button id="rm"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"/>
+          </svg></button>
+          <p >Mahesh noob</p>
+          <div id="ko"></div>
+          <button  id="kg">
+            Colorer
+        </button>
+    </div>
+    <button  id="mg" style="position:fixed; top:40px; left:0px;">
+        NEw
+    </button>
+    
+    <script>
+       var mg=document.getElementById("mg");
+       mg.addEventListener('click',function(){
+            top1.style.display='block';
+       })
+       var rm=document.getElementById("rm");
+       rm.addEventListener('click',function(){
+            top1.style.display='none';
+       })
+       var kg=document.getElementById("kg");
+       kg.addEventListener('click',function(){
+            if(ko.style.backgroundColor=='green'){
+                ko.style.backgroundColor='yellow';
+            }
+            else if(ko.style.backgroundColor=='yellow'){
+                ko.style.backgroundColor='red';
+            }
+            else{
+                ko.style.backgroundColor='green';
+            }
+       })
+       window.localStorage.setItem("name","MAhesh")
+       var name=window.localStorage.getItem("name");
+       console.log(name);
+       window.localStorage.clear();
+    </script>
+</body>
+</html>

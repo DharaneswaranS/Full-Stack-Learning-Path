@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height:50px;
+            width:50px;
+            background-color: red;
+        }
+        .box.active{
+            height:50px;
+            width:50px;
+            background-color:blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <button onclick="karadi()">Toggle</button>
+    <button onclick="karadi2()">Remove</button>
+    <button onclick="karadi3()">ADD</button>
+    <script>
+        function karadi(){
+            var box=document.getElementsByClassName("box");
+            box[0].classList.toggle('active')
+        }
+        function karadi2(){
+            var box=document.getElementsByClassName("box");
+            box[0].classList.remove('active')
+        }
+        function karadi3(){
+            var box=document.getElementsByClassName("box");
+            box[0].classList.add('active')
+        }
+    </script>
+</body>
+</html>

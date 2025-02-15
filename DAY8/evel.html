@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO LIST</title>
+    <style>
+        .inn{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="ko" placeholder="name">
+    <button id="b1">STORE</button>
+    <table id="kk1">
+        <tr>
+            <th>TO DO </th>
+            <th>Done or not</th>
+        </tr>
+    </table>
+    <script>
+        var b1=document.getElementById("b1");
+        var a=[];
+        b1.addEventListener('click',function(){
+            var kk1=document.getElementById("kk1")
+            var tr=document.createElement("tr")
+            var ko=document.getElementById("ko").value;
+            window.localStorage.setItem("name",ko)
+            var j=window.localStorage.getItem("name")
+            a.push(j);
+            tr.innerHTML=`<td><input onclick="change11()" value="${intp}" class="inn" type="checkbox"></td><td><h3 id="${intp}" class="detail">${intp}</h3></td>`
+            console.log(a)
+            kk1.append(tr)
+            function change11(){
+                var va=document.querySelectorAll(".inn")
+                for(i=0;i<va.length;i++){
+                    if(va[i].checked){
+                        var kk=document.getElementById(va[i].value)
+                        kk.style.textDecoration="line-through"
+                    }
+                    else{
+                         var kk=document.getElementById(va[i].value)
+                        kk.style.textDecoration="none"
+                    }
+                }
+            }
+        
+        })
+    </script>
+</body>
+</html>

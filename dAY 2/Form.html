@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .reg{
+        background-color:white;
+        width: 400px;
+        height: 300px;
+        margin-top:180px;
+        border: none;
+        border-radius:14px;
+        border-style: solid;
+       text-align:justify ;
+
+
+    }
+    
+    
+    button{
+        border:none;
+        background-color:#04848D;
+        text-shadow: 2px;
+        border-radius:2px;
+        margin-top:10px;
+        margin-left: 160px;
+        height:22px;
+        width:70px;
+
+    }
+    label{
+        
+        position: absolute;
+    }
+    input{
+        position: absolute;
+        margin-left: 100px;
+    }
+    .male{
+        margin-left: 120px;
+    }
+</style>
+<body style="background-color:#04848D">
+   <center>
+    <div class="mahesh">    
+    <form action="" method="get" class="reg" g>
+        <h1 style="margin-left:110px;"> Register Here</h1>
+        <div class="mg">
+        <label for="name">NAME:</label>
+        <input type="text" name="name" id="">
+        <br>
+        <label for="number">NUMBER:</label>
+        <input type="number" name="number" id="">
+        <br>
+        <label for="mail">EMail:</label>
+        <input type="email" name="mail" id="" required>
+        <br>
+        <label for="dob">DOB:</label>
+        <input type="date" name="dob" id="">
+        <br>
+        <label for="gender">GENDER:</label>
+        <input type="radio" class="male" name="g">male
+        <input type="radio" class="female" name="g" disabled>female
+        <br>
+        <label for="password">PASSWORD:</label>
+        <input type="password" name="password">
+        <br>
+        <label for="country">Select Your Country:</label>
+        <select name="country" id="">
+            <option value="me">me</option>
+            <option value="mahesh" selected>Mahesh</option>
+            <option>Mug</option>
+        </select>
+        <br>
+        <button type="submit">Register</button>
+        </div>
+    </form>
+    </center>
+    </div>
+</body>
+</html>

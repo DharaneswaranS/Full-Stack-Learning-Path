@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="k1" placeholder="name">
+    <button id="b1">DONE</button>
+    <script>
+        var b1=document.getElementById("b1");
+        var arr=[];
+        b1.addEventListener("click",function(){
+        var nm=document.getElementById("k1").value;
+        window.localStorage.setItem("name",nm);
+        var rm=window.localStorage.getItem("name")
+        arr.push(rm)
+        console.log(arr);
+        var mag=document.querySelector("#k1").value;
+        console.log(mag)
+        })
+    </script>
+</body>
+</html>

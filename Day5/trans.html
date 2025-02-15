@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin-top:10px;
+        }
+        .box1{
+            width:100px;
+            height:100px;
+
+            background-color: red;
+            transition:width 5s,background-color 2s;
+            transition-timing-function: ease-in;
+        }
+        .box1:hover{
+            width:150px;
+            background-color: aqua;
+            
+        }
+        .box2{
+            width:100px;
+            height:100px;
+            border-radius:50px;
+            background-color: red;
+            transition:width 2s,background-color 2s;
+            animation-name:mug;
+            animation-duration:10s;
+            animation-iteration-count:infinite ;
+        }
+        @keyframes mug{
+            0%{left:200px;}
+            20%{bottom:400px;}
+        }
+        @keyframes mahesh{
+            from{width:100px;}
+            to{width:150px;}
+        }
+        .box3{
+            width:100px;
+            height:100px;
+            background-color: red;
+            animation-name:mahesh;
+            animation-duration:10s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes bounce{
+            from{transform:translateY(0px);}
+            to{transform:translateY(100px);}
+        }
+        .box4{
+            width:100px;
+            height:100px;
+            background-color: red;
+            animation-name: bounce;
+            animation-duration:2s;
+            animation-iteration-count: infinite ;
+        }
+        .box4:hover{
+            width:150px;
+            background-color: aqua;
+        }
+        
+    </style>
+</head>
+<body>
+  <div class="box1"></div>
+  <div class="box2"></div>
+  <div class="box3"></div>
+  <div class="box4"></div>
+</body>
+</html>

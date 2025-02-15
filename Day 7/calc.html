@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <input type="number" id="mg">
+    <input type="number" id="mg1">
+    <button  onclick="add1()">ADD</button>
+    <button onclick="sub1()">SUB</button>
+    <button onclick="mul1()">MUL</button>
+    <button onclick="div1()">DIV</button>
+    <script>
+        function add1() {
+            var a = document.getElementById("mg");
+            var b = document.getElementById("mg1");
+            e = Number(a.value)
+            f = Number(b.value)
+            var c = Number(e + f);
+            console.log(c)
+        }
+        function sub1() {
+            var a = document.getElementById("mg");
+            var b = document.getElementById("mg1");
+            e = Number(a.value)
+            f = Number(b.value)
+            var c = Number(e - f);
+            console.log(c)
+        }
+        function mul1() {
+            var a = document.getElementById("mg");
+            var b = document.getElementById("mg1");
+            e = Number(a.value)
+            f = Number(b.value)
+            var c = Number(e * f);
+            console.log(c)
+        }
+        function div1() {
+            var a = document.getElementById("mg");
+            var b = document.getElementById("mg1");
+            e = Number(a.value)
+            f = Number(b.value)
+            var c = Number(e / f);
+            console.log(c)
+        }
+    </script>
+</body>
+
+</html>
