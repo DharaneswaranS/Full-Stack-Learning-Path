@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Website</title>
+    <style>
+        #ev {
+            display: inline-flex;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            margin-right: 20px;
+
+        }
+
+        nav {
+            margin-left: 750px;
+            display: inline-flex;
+        }
+
+        h1 {
+            width=150px;
+            height=150px;
+        }
+
+        .mid {
+            background-color: white;
+            height: 300px;
+            width: 450px;
+            margin: auto;
+            margin-left: 36%;
+            margin-top: 140px;
+            display: inline-flex;
+        }
+
+        .rd {
+            background-image: url(kd.jpg);
+            background-size: cover;
+            color: white;
+            border: 2px solid white;
+            height: 300x;
+            width: 325px;
+        }
+
+        #email {
+            height: 30px;
+            margin-left: 40px;
+            margin-bottom: 20px;
+        }
+
+        #password {
+            height: 30px;
+            margin-left: 40px;
+        }
+
+        button:hover {
+            opacity: 60%;
+        }
+
+        a:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<body style="background-image:url(mug.webp); background-size:cover;">
+    <section id="ev" style="color:white;">
+        <h1 style="margin-left:40px;">
+            CodingNepal
+        </h1>
+        <nav>
+            <ol>
+                <a href="">Home</a> <a href="">Portfolio</a><a href="">Courses</a><a href="">About Us</a><a
+                    href="">Contact us</a>
+            </ol>
+        </nav>
+        <button type="submit"
+            style="height:40px; width:100px; color:blue; background-color:white; border:none; border-radius:2px; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">LOG
+            IN </button>
+    </section>
+    <section class="mid">
+        <div class="rd">
+            <h1 style="font-size=15px; margin-top:100px; margin-left:16px;">
+                Welcome back</h1>
+            <p style="font-size:15px; text-align:center;">
+                Please log in using your personal information to stay connected with us
+            </p>
+        </div>
+        <form action="" method="get" class="l">
+            <h1
+                style="color:gray; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-left:226px; margin-top:-1px;">
+                X
+            </h1>
+            <h1 style="padding-left:100px;">LOGIN</h1>
+            <input type="email" placeholder="Email" required id="email">
+            <input type="password" placeholder="Password" required id="password">
+            <br>
+            <a style="font-size:12px; margin-left:40px; margin-bottom:20px; color:skyblue;">Forgot password?</a>
+            <br>
+            <button type="submit"
+                style="height:30px; width:170px; margin-left:40px; margin-top:20px; background-color:blue; color:white; border: none;">LOG
+                IN</button>
+            <p style="font-size:12px; margin-left:50px;">Dont have an account? <span style="color:aqua;"><a
+                        style="text-decoration:none; color:aqua;" href="">Signup</a></span></p>
+        </form>
+    </section>
+</body>
+
+</html>
